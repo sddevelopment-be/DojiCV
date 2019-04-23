@@ -1,13 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Developer CV
+% Developer CV - Doji edit
 % LaTeX Class
-% Version 1.0 (28/1/19)
-%
-% This class originates from:
-% http://www.LaTeXTemplates.com
+% Version 1.0 (23/04/19)
 %
 % Authors:
-% Jan Vorisek (jan@vorisek.me)
+% Stijn Dejongh (stijn.c.dejongh@gmail.com)
+% Based on a template by Jan Vorisek (jan@vorisek.me)
 % Based on a template by Jan Küster (info@jankuester.com)
 % Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
 %
