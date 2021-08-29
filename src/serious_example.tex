@@ -1,0 +1,397 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt, blue]{developercv} % Default font size, values from 8-12pt are recommended
+\PassOptionsToPackage{dvipsnames}{xcolor}
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+% Remove this import if you have no need for the header information
+\input{header}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\hspace{18pt}
+\begin{minipage}[t]{0.12\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{-.38cm}
+	\img{img/barry}
+\end{minipage}
+\begin{minipage}[t]{0.63\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{-.38cm}
+	\colorbox{accent}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Barry}}}}} % First name
+	\hspace{-2pt}
+	\colorbox{accent}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{B.}}}}}
+	\hspace{-2pt}
+	\colorbox{accent}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Bareel}}}}} % Last name
+    \vspace{0.35cm}
+
+	{\LARGE Primary job title \space\space \fcpipe \space\space Secondary job title}\\ % Career or current job title
+
+	\vspace{-1.1em}
+	\hspace{1pt}{\ssmall \speciality{Speciality 1} \space\bpipe\space \speciality{speciality 2} \space\bpipe\space \speciality{An other Specialty 3} \space\bpipe\space \speciality{I am very good at stuff} }
+\end{minipage}
+\hspace{-5pt}
+\begin{minipage}[t]{0.22\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{0pt}
+	\color{darkCalmBlue}
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\ssmall
+	\linkedin{\href{https://linkedin.com/in/barry-bareel}{/barry-bareel}}\\
+
+	\vspace{-4pt}
+	\github{\href{https://github.com/barry-bareel}{/barry-bareel}}\\
+
+	\vspace{-4pt}	
+	\email{\href{mailto:barry@bareel.xxx}{barry@bareel.xxx}}\\ 
+
+	\vspace{-4pt}
+	\callme{+00 555 12 34 56}
+
+	\vspace{-5pt}
+\end{minipage}
+\hfill % Whitespace between
+%\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+%	\vspace{-\baselineskip} % Required for vertically aligning minipages
+%	\begin{barchart}{5.5}
+%		\baritem{JavaScript}{60}
+%		\baritem{PHP}{100}
+%		\baritem{SASS/LESS}{70}
+%		\baritem{Bootstrap}{70}
+%		\baritem{Git}{40}
+%		\baritem{LaTeX}{60}
+%	\end{barchart}
+%\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\vspace{8pt}
+\cvsect{Experience}
+\vspace{2.1mm}
+\begin{entrylist}
+	\entry
+	{03/2020 -- present }
+	{\linkage{https://www.google.com}{Name of the project and/or customer}}
+	{Self Employed \space\cpipe\space Freelance}
+	{
+		\vspace{0.3mm}
+		\begin{minipage}[t]{0.75\textwidth}
+			\vspace{-\baselineskip}
+			\itemmarker I achieved something amazing, helping the customer increase their profits by 5000\% over the span of X months. (\linkage{https://www.google.com}{link to reference})\\
+			\itemmarker  Use active language when describing your efforts and resposabilities. \\
+			\vspace{-3mm}\\
+			\itemmarker Try and quantify the things you did. This gives your recruiter a better view of the scope and results. It also demonstrates you know what is important to your customer.\\
+ 			\vspace{-3mm}\\
+ 			\itemmarker If you talk about a specific technology or methodology that not everyone will be familiar with, include a link to it's website or wiki page. For example: I organized \linkage{https://www.scrum.org/resources/what-is-scrum}{Scrum} ceremonies to increase developer engagement.\\
+ 			\vspace{-3mm}
+		\end{minipage}
+
+		\techlist{Add, the, most, relevant, tools, and, technologies, here}
+	}
+	{Primary Function \band Other function}
+	\entry
+	{03/2019 -- 12/2019}
+	{Project name - Customer name}
+	{Company I worked for}
+	{
+		\vspace{0.3mm}
+		\begin{minipage}[t]{0.75\textwidth}
+			\vspace{-\baselineskip}
+			\itemmarker \lorem \\
+			\itemmarker \lorem, resulting in a 24\% decrease of the execution time.\\
+			\vspace{-3mm}\\
+			\itemmarker \lorem \lorem \\
+			\vspace{-3mm}
+		\end{minipage}
+
+		\skilllist{Not, every, project, is, tech, driven, so, I, list, my, relevant, skills, here}
+	}
+	{My job title at the time}
+	\entry
+		{10/2015 -- 02/2019}
+		{\linkage{https://www.wikipedia.com}{Some project - Customer name}}
+		{Employer name}
+		{
+			\vspace{0.3mm}
+			\begin{minipage}[t]{0.75\textwidth}
+				\vspace{-\baselineskip}
+				\itemmarker Make sure you include only relevant job experiences here.\\
+				\vspace{-3mm}\\
+				\itemmarker If you wish to note that you have had more experiences in the past, combine them into a single entry in this list. \\
+				\itemmarker This overcomes "gaps" in your curriculum, while keeping focus on the direction you are pursuing now. \\
+				\vspace{-3mm}
+			\end{minipage}
+
+		\techlist{Add, the, most, relevant, tools, and, technologies, here}
+	   }
+		{Job title \band Other thing I did}
+	\entry
+	{2011 -- 2015 \pipe\tiny{discontinuous}}
+	{Company One \cpipe Company Two }
+	{Internship \space\cpipe\space Gap Filler}
+	{
+		\vspace{0.4mm}
+		\begin{minipage}[t]{0.75\textwidth} % 27.5% of the page width for the first row of icons
+			\vspace{-\baselineskip} \small
+			\vspace{-2mm}
+			\itemmarker Use a collection section like this for jobs you did a long time ago.\\
+			\vspace{-3mm}\\
+			\itemmarker You can also use this to talk about semi-relevant internships or extra-curricular projects.\\
+			\vspace{-3mm}\\
+			\itemmarker Make sure to be very brief here and focus only on the highlights.
+		\end{minipage}
+	}
+	{Various functions}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\vspace{-8mm}
+\begin{minipage}[t]{0.28\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Languages}
+	
+	\vspace{1.2mm}
+	\small \textbf{Dutch} \hfill {\ssmall C2 Proficient User \cpipe Mother tongue \hspace{3pt}} \\
+	
+	\vspace{-0.5mm}
+	\small \textbf{English} \hfill \hspace{-5pt}{\ssmall C1 Proficient User \hspace{3pt}} \\
+	
+	\vspace{-0.5mm}
+	\small \textbf{French} \hfill \hspace{-5pt}{\ssmall B2 Independent User \hspace{3pt}} \\
+	
+	\vspace{-0.5mm}
+	\small \textbf{German} \hfill \hspace{-5pt}{\ssmall A1 Basic User \hspace{3pt}} \\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Proud of}
+	
+	\vspace{1.2mm}
+	\textcolor{accentbackground}{\faGlobe}\hspace{0.5mm}  \small{\textbf{\linkage{https://www.github.com/stijn-dejongh}{Open Source Contributions}}} \\
+	\footnotesize Talk about a notable side project here.
+	
+	\vspace{2.5mm}
+	\textcolor{accentbackground}{\faHeart}\hspace{0.5mm}
+	\small{\textbf{\linkage{https://www.vzwaif.be/projecten-2/}{A volunteer experience}}} \\ 
+	\footnotesize Social service or community involvement is always nice to put on a resume.
+	
+	\vspace{2.5mm}
+	\textcolor{accentbackground}{\faTrophy}\hspace{1mm} \small{\textbf{\linkage{https://ec.europa.eu/isa2/news/winners-sharing-and-reuse-awards-made-public_en}{Notable award or achievement}}} \\ 
+	\footnotesize Add anything extraordinary you achieved or overcame here.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Education \amp Trainings}
+
+	\vspace{1.2mm}
+	\begin{minipage}[t]{\linewidth}
+		\vspace{-\baselineskip}
+		\vspace{0mm}
+		\small \textbf{Professional Great Person II} \hfill \techit{\fontsize{4}{5}\selectfont certification} \vspace{-1mm} \\
+		\footnotesize 2020 from \textcolor{accentbackground}{\linkage{https://www.linkto.certificate}{Issuer of certificate}}
+	\end{minipage}\hfill
+	\vspace{1.2em}
+	\begin{minipage}[t]{\linewidth}
+		\vspace{-\baselineskip}
+		\vspace{0mm}
+		\small \textbf{Relevant course or Training} \hfill \techit{\fontsize{4}{5}\selectfont training} \vspace{-1mm} \\
+		\footnotesize 2019 by \textcolor{accentbackground}{\linkage{https://www.udemy.com}{Instructor or platform}}
+	\end{minipage}\hfill
+	\vspace{1.2em}
+	\begin{minipage}[t]{\linewidth}
+		\vspace{-\baselineskip}
+		\vspace{0mm}
+		\small \textbf{M. Sc. Applied Awesomeness} \hfill \techit{\fontsize{4}{5}\selectfont degree} \vspace{-1mm} \\
+		\footnotesize 2015 from \textcolor{accentbackground}{\linkage{https://en.wikipedia.org/wiki/School_of_Hard_Knocks}{School of hard knocks}} \\
+		\bpipe cum laude (or other academic honors) \vspace{0pt}
+	\end{minipage}\hfill
+	\vspace{1.9em}
+	\begin{minipage}[t]{\linewidth}
+		\vspace{-\baselineskip}
+		\vspace{0mm}
+		\small \textbf{B. Sc. Awesomeness} \hfill \techit{\fontsize{4}{5}\selectfont degree} \vspace{-1mm} \\
+		\footnotesize 2012 from \textcolor{accentbackground}{\linkage{https://en.wikipedia.org/wiki/School_of_Hard_Knocks}{School of hard knocks}}
+	\end{minipage}
+	\hfill
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\clearpage
+%----------------------------------------------------------------------------------------
+%	SKILL SECTIONS
+%----------------------------------------------------------------------------------------
+
+\cvsect{Skills, Tools \amp Platforms}
+
+\vspace{3.2mm}
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Methodologies and Techniques}
+	\\
+	\begin{minipage}[t]{\textwidth}
+		\hspace{7mm} \cvskill{Design patterns \cand Refactoring techniques}{4}
+		\hspace{7mm} \cvskill{Test Driven Development \cpipe TDD}{5}
+		\hspace{7mm} \cvskill{Domain Driven Design \cpipe DDD }{4}
+		\hspace{7mm} \cvskill{Behaviour Driven Development \cpipe BDD}{3}
+		\hspace{7mm} \cvskill{Testing Approaches}{4}
+		\hspace{7mm} \cvskill{Prototyping}{4}
+		\hspace{7mm} \cvskill{C4 modelling}{3}
+		\hspace{7mm} \cvskill{Process agility \cand workplace humanization}{5}
+		\vspace{2.5mm}
+	\end{minipage}
+	\vspace{8mm}
+	
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Design \band Documentation tools}
+	\\
+	\begin{minipage}[t]{\textwidth}
+		\hspace{7mm} \cvskill{PlantUML \cand Structurizr}{4}
+		\hspace{7mm} \cvskill{\linkage{https://www.sparxsystems.com/}{Enterprise Architect}}{3}
+		\hspace{7mm} \cvskill{draw.io \cpipe diagrams.net}{4}
+		\hspace{7mm} \cvskill{Document generation}{5}
+		\hspace{7mm} \cvskill{\linkage{https://www.atlassian.com/software}{Atlassian Confluence \cand Jira}}{4}
+		\vspace{2.5mm}
+	\end{minipage}
+	\vspace{8mm}
+	
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Programming \band Scripting languages}
+	\\
+		\begin{minipage}[t]{\textwidth}
+			\hspace{7mm} \cvskill{Java}{5}
+			\hspace{7mm} \cvskill{Kotlin}{3}
+			\hspace{7mm} \cvskill{Python}{3}
+			\hspace{7mm} \cvskill{JavaScript \cand TypeScript}{4}
+			\hspace{7mm} \cvskill{PHP}{3}
+			\hspace{7mm} \cvskill{Bash Scripting}{4}
+			\vspace{2.5mm}
+		\end{minipage}
+	\vspace{8mm}
+
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Markup languages}
+	\\
+	\begin{minipage}[t]{\textwidth}
+		\hspace{7mm} \cvskill{XSD \cand XML}{5}
+		\hspace{7mm} \cvskill{HTML}{4}
+		\hspace{7mm} \cvskill{CSS \cpipe SCSS \cpipe SASS}{3}
+		\hspace{7mm} \cvskill{Asciidoc \cpipe Markdown}{4}
+		\hspace{7mm} \cvskill{LaTeX}{4}
+		\vspace{2.5mm}
+	\end{minipage}
+	\vspace{8mm}
+
+	
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+	
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Platforms and server technology}
+	\\
+	\begin{minipage}[t]{\textwidth}
+		\hspace{7mm} \cvskill{Tomcat}{4}
+		\hspace{7mm} \cvskill{JBoss Server \cpipe Wildfly}{3}
+		\hspace{7mm} \cvskill{Oracle Weblogic}{4}
+		\hspace{7mm} \cvskill{Docker}{4}
+		\hspace{7mm} \cvskill{Active MQ}{3}
+		\hspace{7mm} \cvskill{Oracle SQL Server}{4}
+		\hspace{7mm} \cvskill{MongoDB}{3}
+		\hspace{7mm} \cvskill{Linux}{4}
+		\vspace{2.5mm}
+	\end{minipage}
+	\vspace{8mm}
+	
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Frameworks \band libraries}
+	\\
+	\begin{minipage}[t]{\textwidth}
+		\hspace{7mm} \cvskill{Spring \cand Spring Boot}{5}
+		\hspace{7mm} \cvskill{Hibernate}{5}
+		\hspace{7mm} \cvskill{JDBC}{4}
+		\hspace{7mm} \cvskill{Boilerplate generators: Mapstruct \cand Lombok}{4}
+		\hspace{7mm} \cvskill{JUnit \cand AssertJ}{5}
+		\hspace{7mm} \cvskill{JBehave \cand Cucumber}{3}
+		\vspace{2.5mm}
+	\end{minipage}
+	\vspace{8mm}
+
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Frontend frameworks \band Libraries}
+	\\
+	\begin{minipage}[t]{\textwidth}
+		\hspace{7mm} \cvskill{Angular \cand AngularJS}{3}
+		\hspace{7mm} \cvskill{Drupal}{4}
+		\hspace{7mm} \cvskill{JSF}{3}
+		\hspace{7mm} \cvskill{Static site generators}{4}
+		\hspace{7mm} \cvskill{Selenium \cand Cypress}{3}
+		\vspace{2.5mm}
+	\end{minipage}
+	\vspace{8mm}
+
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\skillsect{Development tools}
+	\\
+	\begin{minipage}[t]{\textwidth}
+		\hspace{7mm} \cvskill{Maven}{5}
+		\hspace{7mm} \cvskill{Gradle}{3}
+		\hspace{7mm} \cvskill{Ant}{3}
+		\hspace{7mm} \cvskill{Git}{5}
+		\hspace{7mm} \cvskill{Jenkins}{5}
+		\hspace{7mm} \cvskill{Sonar \cand SonarCloud}{4}
+		\hspace{7mm} \cvskill{JMeter \cand JProfiler}{3}
+		\vspace{2.5mm}
+	\end{minipage}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	PERSONALITY SECTIONS
+%----------------------------------------------------------------------------------------
+\vspace{-6mm}
+\cvsect{Elevator pitch}
+
+\vspace{2.1mm}
+{\small 
+\hspace{10pt} Write a text about what makes you stand out from your competition. Think about it as what a recruiter would say to a prospect in order to convince them to hire you. \lorem \lorem \\
+
+\vspace{-0.7em}
+\hspace{10pt} \lorem \lorem \lorem \lorem \lorem}
+
+\end{document}
