@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Developer CV - Doji edit
 % LaTeX Class
-% Version 1.0 (23/04/19)
+% Version 1.0 (28/11/21)
 %
 % Authors:
-% Stijn Dejongh (stijn.c.dejongh@gmail.com)
+% Stijn Dejongh
 % Based on a template by Jan Vorisek (jan@vorisek.me)
 % Based on a template by Jan Küster (info@jankuester.com)
 % Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
@@ -199,19 +199,19 @@
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
 \newcommand{\photo}[2]{\def\@photo{#2}\def\@photodiameter{#1}}
-\newcommand{\email}[1]{\printinfo{\mailsymbol}{\gdpr{#1}}}
-\newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{#1}}
-\newcommand{\callme}[1]{\phone{\gdpr{\href{tel:#1}{#1}}}}
-\newcommand{\phone}[1]{\printinfo{\phonesymbol}{#1}}
-\newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{#1}}
-\newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
-\newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{#1}}
-\newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
-\newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
-\newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
-\newcommand{\kbo}[1]{\business{\href{https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=en\&nummer=#1\&actionLu=Zoek}{\textbf{KBO:} #1}}}
-\newcommand{\business}[1]{\printinfo{\faBriefcase}{#1}}
-\newcommand{\revision}[1]{\printinfo{{\faRefresh}}{{{\MakeUppercase{\textbf{CV version:} #1}} }}}
+\newcommand{\email}[1]{\printinfo{\mailsymbol}{\gdpr{\textcolor{accent}{#1}}}}
+\newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{\textcolor{accent}{#1}}}
+\newcommand{\callme}[1]{\phone{\gdpr{\href{tel:#1}{\textcolor{accent}{#1}}}}}
+\newcommand{\phone}[1]{\printinfo{\phonesymbol}{\textcolor{accent}{#1}}}
+\newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\textcolor{accent}{#1}}}
+\newcommand{\twitter}[1]{\printinfo{\twittersymbol}{\textcolor{accent}{#1}}}
+\newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{\textcolor{accent}{#1}}}
+\newcommand{\github}[1]{\printinfo{\githubsymbol}{\textcolor{accent}{#1}}}
+\newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{\textcolor{accent}{#1}}}
+\newcommand{\location}[1]{\printinfo{\locationsymbol}{\textcolor{accent}{#1}}}
+\newcommand{\kbo}[1]{\business{\href{https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=#1}{\textcolor{accent}{\textbf{KBO:} #1}}}}
+\newcommand{\business}[1]{\printinfo{\faBriefcase}{\textcolor{accent}{#1}}}
+\newcommand{\revision}[1]{\printinfo{{\faRefresh}}{{{\MakeUppercase{\textbf{\textcolor{accent}{CV version:}} #1}} }}}
 
 \newcommand{\pipe}{\textbf{|} }
 \newcommand{\spipe}{\textcolor{text!65}{\pipe}}
