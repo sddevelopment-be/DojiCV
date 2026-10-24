@@ -42,3 +42,21 @@ Also includes two types of CVs: one for young graduates that do not have a lot o
 - Updated content of playful_example.tex to fit the new template
 - Changed serious_example.tex to be used for both contractor and employee CVs
 - Removed my CV data from the example and replaced it by a fictional person
+
+## v2.0.0
+
+### Added
+
+- `.envrc` providing Typst, just and the required fonts through Nix
+- `justfile` with `build` and `watch` recipes
+- GDPR mode can be toggled from the command line with `--input gdpr=true`
+
+### Changed
+
+- Converted the template and all examples from LaTeX to Typst
+- The contractor example now has its own source file, `contractor_example.typ`
+- Skill ratings, bubbles and bar charts are drawn natively instead of with TikZ
+
+### Removed
+
+- All LaTeX sources, the `developercv` class and the bundled `fontawesome.pdf`
